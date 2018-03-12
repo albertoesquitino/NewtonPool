@@ -98,7 +98,7 @@ Usage
 * libssl required for the node-multi-hashing module
   * For Ubuntu: `sudo apt-get install libssl-dev`
   
-#### install NVM (Nodejs Version Manager)
+#### install NVM (Node Version Manager)
 # Git install
 If you have git installed (requires git v1.7.10+):
 
@@ -112,13 +112,15 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-# Now install nodejs 0.10.48 
+# Now install nodejs 0.10.48
+
+```bash
 nvm install 0.10.48
 nvm use 0.10.48
 nvm alias default 0.10.48
 nvm use default
 npm update
-
+```
 
 ##### Seriously
 Those are legitimate requirements. If you use old versions of Node.js or Redis that may come with your system package manager then you will have problems. Follow the linked instructions to get the last stable versions.
