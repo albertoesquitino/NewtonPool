@@ -4,7 +4,7 @@ var poolHost = "poolhost.com";
 
 var irc = "irc.freenode.net/#poolhost";
 
-var email = "support@poolhost.com";
+var email = "support@newtoncoin.tech";
 
 var cryptonatorWidget = ["{symbol}-BTC", "{symbol}-USD", "{symbol}-EUR"];
 
