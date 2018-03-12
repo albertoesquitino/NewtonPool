@@ -119,6 +119,7 @@ nvm alias default 0.10.48
 nvm use default
 npm update
 
+
 ##### Seriously
 Those are legitimate requirements. If you use old versions of Node.js or Redis that may come with your system package manager then you will have problems. Follow the linked instructions to get the last stable versions.
 
