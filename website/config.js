@@ -1,6 +1,6 @@
-var api = "http://poolhost.com:1117";
+var api = "http://www.newtoncoin.club/:8117";
 
-var poolHost = "poolhost.com";
+var poolHost = "newtoncoin.club";
 
 var irc = "irc.freenode.net/#poolhost";
 
