@@ -108,9 +108,11 @@ cd ~/.nvm and check out the latest version with git checkout v0.33.8
 activate nvm by sourcing it from your shell: . nvm.sh
 Now add these lines to your ~/.bashrc, ~/.profile, or ~/.zshrc file to have it automatically sourced upon login: (you may have to add to more than one of the above files)
 
+```bash
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+```
 
 # Now install nodejs 0.10.48
 
