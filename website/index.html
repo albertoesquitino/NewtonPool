@@ -155,7 +155,11 @@
         var amount = (parseInt(coins || 0) / lastStats.config.coinUnits).toFixed(digits || lastStats.config.coinUnits.toString().length - 1);
         return amount + (withoutSymbol ? '' : (' ' + lastStats.config.symbol));
     }
-
+    function percentagestring(unit){
+        var i = 0;
+        var byteUnits = [' %'];
+        return unit.toFixed(2) + byteUnits[i];
+    }
     function formatDate(time){
         if (!time) return '';
         return new Date(parseInt(time) * 1000).toLocaleString();
