@@ -1,6 +1,6 @@
-var api = "http://www.newtoncoin.club/:8117";
+var api = "ncp-stratum.efectivepool.tk:8117";
 
-var poolHost = "newtoncoin.club";
+var poolHost = "ncp-stratum.efectivepool.tk";
 
 var irc = "irc.freenode.net/#poolhost";
 
