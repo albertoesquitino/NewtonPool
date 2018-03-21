@@ -19,23 +19,23 @@
     "poolServer": {
         "enabled": true,
         "clusterForks": "auto",
-        "poolAddress": "cczJqS4geLvAJWja761PznghqVuXaV27M3HeR12vWRvhDhBhwsjQ2XZSkkXBJ48WEyYrCL6okCBUS4X7QLRpqiw89jzkeUfXLn",
+        "poolAddress": "cczJspsEHLmYgc1N98KMGvTuinK1SkdZs8QpVBFmuZmhJh1vmdNnWfPNr3UH6jPaKB1rMwARLBcP7MBn84PrNmEo7ScxzzffmA",
         "blockRefreshInterval": 1000,
         "minerTimeout": 900,
         "ports": [
             {
                 "port": 3333,
-                "difficulty": 100,
+                "difficulty": 1000,
                 "desc": "Low end hardware"
             },
             {
                 "port": 5555,
-                "difficulty": 2000,
+                "difficulty": 10000,
                 "desc": "Mid range hardware"
             },
             {
                 "port": 7777,
-                "difficulty": 10000,
+                "difficulty": 100000,
                 "desc": "High end hardware"
             },
             {
@@ -46,12 +46,13 @@
             }
         ],
         "varDiff": {
-            "minDiff": 100,
-            "maxDiff": 200000,
-            "targetTime": 100,
-            "retargetTime": 30,
+            "enabled": true,
+            "minDiff": 1000,
+            "maxDiff": 2000000,
+            "targetTime": 55,
+            "retargetTime": 120,
             "variancePercent": 30,
-            "maxJump": 100
+            "maxJump": 20
         },
         "fixedDiff": {
             "enabled": true,
@@ -110,7 +111,7 @@
 
     "wallet": {
         "host": "127.0.0.1",
-        "port": 22236
+        "port": 8082
     },
 
     "redis": {
