@@ -102,6 +102,8 @@
         <div id="donations"><i class="fa fa-gift"></i> Donations: <span id="poolDonations"></span></div>
         <div><i class="fa fa-money"></i> Total Pool Fee: <span id="poolFee"></span></div>
         <div><i class="fa fa-history"></i> Block Found Every: <span id="blockSolvedTime"></span> (est.)</div>
+	<div><i class="fa fa-history"></i> Round Effort: <span id="roundeffort"></span> (est.)</div>
+
     </div>
 
     <div class="col-md-4 stats marketRate">
@@ -316,7 +318,8 @@
 
             updateText('networkHashrate', getReadableHashRateString(lastStats.network.difficulty / lastStats.config.coinDifficultyTarget) + '/sec');
             updateText('networkDifficulty', lastStats.network.difficulty.toString());
-            updateText('blockchainHeight', lastStats.network.height.toString());
+            updateText('roundeffort', percentagestring(lastStats.pool.roundHashes / lastStats.network.difficulty*100));
+	    updateText('blockchainHeight', lastStats.network.height.toString());
             updateText('networkLastReward', getReadableCoins(lastStats.network.reward, 4));
             updateText('lastHash', lastStats.network.hash.substr(0, 13) + '...').setAttribute('href', getBlockchainUrl(lastStats.network.hash));
 
